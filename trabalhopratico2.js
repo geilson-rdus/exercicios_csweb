@@ -15,3 +15,9 @@ function gerarAleatorios(){
   console.log("Gerações: ", geracoes);
   console.log("Finais: ", vetor);
 }
+
+function main(){
+  console.time("timer");
+  gerarAleatorios();
+  console.timeEnd("timer");
+}
