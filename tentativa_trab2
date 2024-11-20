@@ -1,0 +1,18 @@
+console.time("timer");
+
+var vetorNumeros = [];
+var vetorNumSel = [];
+
+for(var j = 1; j <= 60; j++){
+    vetorNumeros.push(j)
+}
+
+for(var i = 0; i < 6; i++){
+    var aleatorio = Math.floor(Math.random()*(60 - i))
+    var numSel = vetorNumeros.splice(aleatorio,1)
+    vetorNumSel = [...vetorNumSel, ...numSel]
+}
+
+console.log(vetorNumSel)
+
+console.timeEnd("timer");
