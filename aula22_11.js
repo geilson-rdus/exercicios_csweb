@@ -41,6 +41,7 @@ function game(){
     tentativas = tentativas + 1
     if(cor_computador == cor_escolhida){
         alert("Parabéns! Você ganhou")
+        return
     }else{
         if(tentativas > 2){
             alert("GAME OVER")
