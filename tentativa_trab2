@@ -8,7 +8,7 @@ for(var j = 1; j <= 60; j++){
 }
 
 for(var i = 0; i < quantidade; i++){
-    var aleatorio = Math.floor(Math.random()*(60 - i))
+    var aleatorio = Math.floor(Math.random()*vetorNumeros.length)
     var numSel = vetorNumeros.splice(aleatorio,1)
     vetorNumSel = [...vetorNumSel, ...numSel]
 }
