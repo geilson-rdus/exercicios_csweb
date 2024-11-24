@@ -1,6 +1,11 @@
 function geraAleatorios(quantidade) {
     // Cria um array de 1 a 60
-    const vetorNumeros = Array.from({ length: 60 }, (_, i) => i + 1);
+
+    const vetorNumeros = []
+    
+    for(var j = 1; j <= 60; j++){
+        vetorNumeros.push(j)
+    }
 
     // Embaralha o array usando Fisher-Yates Shuffle
     for (let i = vetorNumeros.length - 1; i > 0; i--) {
