@@ -1,8 +1,8 @@
-function gerarAleatorios(){
+function gerarAleatorios(qtdNumeros){
   var vetor = [];
   var geracoes = [];
 
-  while(vetor.length < 6){
+  while(vetor.length < qtdNumeros){
     var aleatorio = Math.floor(Math.random()*60 + 1);
     geracoes.push(aleatorio);
     if(vetor.includes(aleatorio)){
@@ -16,8 +16,8 @@ function gerarAleatorios(){
   console.log("Finais: ", vetor);
 }
 
-function main(){
+function main(qtdNumeros){
   console.time("timer");
-  gerarAleatorios();
+  gerarAleatorios(qtdNumeros);
   console.timeEnd("timer");
 }
